@@ -23,14 +23,11 @@ import {Ng5SliderModule} from 'ng5-slider';
 import {NgpSortModule} from 'ngp-sort-pipe';
 import {MenuComponent} from './shared/components/menu/menu.component';
 import { CartComponent } from './cart/cart.component';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatCarouselModule} from '@ngmodule/material-carousel';
-import {MatRippleModule} from '@angular/material/core';
 import {registerLocaleData} from '@angular/common';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-
+import { AboutPageComponent } from './about-page/about-page.component';
 registerLocaleData(ruLocale, 'ua');
 
+// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +37,8 @@ registerLocaleData(ruLocale, 'ua');
     HomePageComponent,
     LeftNavbarComponent,
     MenuComponent,
-    CartComponent
+    CartComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
@@ -56,10 +54,7 @@ registerLocaleData(ruLocale, 'ua');
     }),
     Ng5SliderModule,
     NgpSortModule,
-    MatStepperModule,
-    MatCarouselModule.forRoot(),
-    MatRippleModule,
-    MatAutocompleteModule
+    FlexLayoutModule
   ],
   providers: [AuthService, WorkWithFirebaseIconsService,
     {provide: HTTP_INTERCEPTORS,
