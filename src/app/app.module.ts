@@ -25,9 +25,14 @@ import {MenuComponent} from './shared/components/menu/menu.component';
 import { CartComponent } from './cart/cart.component';
 import {registerLocaleData} from '@angular/common';
 import { AboutPageComponent } from './about-page/about-page.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { HowToBuyPageComponent } from './how-to-buy-page/how-to-buy-page.component';
+import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { GuaranteePageComponent } from './guarantee-page/guarantee-page.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+
 registerLocaleData(ruLocale, 'ua');
 
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +43,11 @@ registerLocaleData(ruLocale, 'ua');
     LeftNavbarComponent,
     MenuComponent,
     CartComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    HowToBuyPageComponent,
+    ContactsPageComponent,
+    GuaranteePageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
@@ -32,7 +32,20 @@ $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
 
 
-html, body { height: 100%; width: 100% }
+html, body { width: 100% }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background:#6168e7;
+}
+.mat-tab-label-content{
+  font-family: 'Gabriela', serif !important;
 
+}
+.custom-tooltip {
+  font-size:16px;
+  background:#6168e7;
+}
+.mat-pseudo-checkbox {
+  color: goldenrod;
+}
