@@ -29,6 +29,7 @@
     "ng5-slider": "^1.2.4",
     "ngp-sort-pipe": "0.0.4",
     "ngx-material-file-input": "^2.1.1",
+    "ngx-scrolltop": "^1.0.0",
     "ngx-take-until-destroy": "^5.4.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

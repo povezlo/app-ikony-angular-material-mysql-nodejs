@@ -21,7 +21,6 @@ import {WorkWithFirebaseIconsService} from './shared/work-with-firebase-icons.se
 import {LeftNavbarComponent} from './shared/components/left-navbar/left-navbar.component';
 import {Ng5SliderModule} from 'ng5-slider';
 import {NgpSortModule} from 'ngp-sort-pipe';
-import {MenuComponent} from './shared/components/menu/menu.component';
 import { CartComponent } from './cart/cart.component';
 import {registerLocaleData} from '@angular/common';
 import { AboutPageComponent } from './about-page/about-page.component';
@@ -30,6 +29,7 @@ import { HowToBuyPageComponent } from './how-to-buy-page/how-to-buy-page.compone
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { GuaranteePageComponent } from './guarantee-page/guarantee-page.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
 
 registerLocaleData(ruLocale, 'ua');
 
@@ -41,7 +41,6 @@ registerLocaleData(ruLocale, 'ua');
     IconPageComponent,
     HomePageComponent,
     LeftNavbarComponent,
-    MenuComponent,
     CartComponent,
     AboutPageComponent,
     HowToBuyPageComponent,
@@ -63,7 +62,8 @@ registerLocaleData(ruLocale, 'ua');
     }),
     Ng5SliderModule,
     NgpSortModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgxScrollTopModule
   ],
   providers: [AuthService, WorkWithFirebaseIconsService,
     {provide: HTTP_INTERCEPTORS,
