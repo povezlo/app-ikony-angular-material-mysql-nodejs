@@ -30,6 +30,7 @@ import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { GuaranteePageComponent } from './guarantee-page/guarantee-page.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { ZoomComponent } from './shared/components/zoom/zoom.component';
 
 registerLocaleData(ruLocale, 'ua');
 
@@ -46,7 +47,8 @@ registerLocaleData(ruLocale, 'ua');
     HowToBuyPageComponent,
     ContactsPageComponent,
     GuaranteePageComponent,
-    FooterComponent
+    FooterComponent,
+    ZoomComponent
   ],
   imports: [
     BrowserModule,
